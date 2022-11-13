@@ -13,7 +13,6 @@ param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
   'prod'
 ])
 param environmentType string
-param environmentTyp2 string
 
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
 var processOrderQueueName = 'processorder'
